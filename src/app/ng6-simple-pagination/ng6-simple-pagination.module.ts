@@ -18,5 +18,5 @@ import { Ng6SimplePaginationComponent } from "./ng6-simple-pagination.component"
 	]
 })
 
-export class Ng6SimplePagination {
+export class Ng6SimplePaginationModule {
 }
