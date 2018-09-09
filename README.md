@@ -1,27 +1,76 @@
-# Ng6SimplePagination
+## Ng6SimplePagination
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
+Simple pagination for angular apps, developed in version 6.1.3.
 
-## Development server
+### Install
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Install package via npm as `npm install ng6-simple-pagination --save`
 
-## Code scaffolding
+### Install Dependancies
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`npm install @angular/material --save`
 
-## Build
+### Usage
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Once installed, you can import ng6 simple pagination component into any application’s app.module.ts, by including it in its @NgModule imports array.
 
-## Running unit tests
+```
+import { Ng6SimplePagination } from "ng6-simple-pagination";
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+@NgModule({
+    declarations: [
+	    AppComponent
+    ],
+    imports: [
+              .
+	    Ng6SimplePagination
+              .
+	],
+	providers: [],
+	bootstrap: [AppComponent]    
+})    
+export  class  AppModule { }
+```
 
-## Running end-to-end tests
+And using its selector in a template as shown below
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```
+<ng6-simple-pagination [pageNumber]="pageNumber" [settings]="settings" (pageNo)="setPageNumber($event)">
+</ng6-simple-pagination>
+```
 
-## Further help
+Property pageNumber and settings initialized as follow
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+pageNumber: number = 0
+
+settings = {
+	totalPage: 5,
+  totalLen: 250,
+  itemsPerPage: 5,
+  color: 'red'
+}
+```
+
+###Inputs (Properties)
+
+- pageNumber - the current active page number.
+- totalLen - total number of items.
+- itemsPerPage - number of the displaying items on a page.
+- totalPage - number of the displaying pages.
+- color - color of the text in the output.
+
+###Update pageNumber
+
+Set current active page number to variable `pageNumber` by,
+
+```
+setPageNumber(pageNo) {
+	this.pageNumber = pageNo;
+	console.log('current page no : ', this.pageNumber)
+}
+```
+
+###Keywords
+
+**angular 6  pagination**

@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="ng6-simple-pagination" *ngIf="totalPage > 1" [style.color]="color">
+			<div class="left-arrow">
+			<mat-icon *ngIf="pageNumber != 0 && totalPage > 1" (click)="clickLeft()">keyboard_arrow_left</mat-icon>
+			</div>
+			<div class="page-details">{{first}} - {{last}} of {{totalLen}}</div>
+			<div class="right-arrow">
+				<mat-icon *ngIf="totalPage > 1 && pageNumber != totalPage - 1" (click)="clickRight()">keyboard_arrow_right</mat-icon>
+			</div>
+		</div>
+	</div>
+</div>

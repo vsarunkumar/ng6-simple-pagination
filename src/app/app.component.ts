@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng6-simple-pagination';
+  
+  pageNumber: number = 0
+
+  settings = {
+  	totalPage: 5,
+	  totalLen: 250,
+	  itemsPerPage: 5,
+	  color: 'red'
+  }
+
+  ngOnInit() {
+  }
+
+  setPageNumber(pageNo) {
+  	this.pageNumber = pageNo;
+  	console.log('current page no : ', this.pageNumber)
+  }
+
 }
