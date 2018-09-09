@@ -52,7 +52,7 @@ settings = {
 }
 ```
 
-###Inputs (Properties)
+### Inputs (Properties)
 
 - pageNumber - the current active page number.
 - totalLen - total number of items.
@@ -60,7 +60,7 @@ settings = {
 - totalPage - number of the displaying pages.
 - color - color of the text in the output.
 
-###Update pageNumber
+### Update pageNumber
 
 Set current active page number to variable `pageNumber` by,
 
@@ -70,7 +70,6 @@ setPageNumber(pageNo) {
 	console.log('current page no : ', this.pageNumber)
 }
 ```
-
-###Keywords
+### Keywords
 
 **angular 6  pagination**
