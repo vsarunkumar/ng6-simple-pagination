@@ -8,7 +8,7 @@ Simple pagination for angular apps, developed in version 6.1.3.
 
 ### Install
 
-Install package via npm as `npm install ng6-simple-pagination --save`
+Install package via npm as  `npm install ng6-simple-pagination --save`
 
 ### Usage
 
@@ -72,3 +72,7 @@ setPageNumber(pageNo) {
 	console.log('current page no : ', this.pageNumber)
 }
 ```
+
+### Output
+
+![No image found](https://raw.githubusercontent.com/vsarunkumar/ng6-simple-pagination/master/src/assets/image/pagination-output.PNG)
