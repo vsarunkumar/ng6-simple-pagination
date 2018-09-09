@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { Ng6SimplePagination } from "./ng6-simple-pagination/ng6-simple-pagination.module";
+import { Ng6SimplePaginationModule } from "./ng6-simple-pagination/ng6-simple-pagination.module";
 
 @NgModule({
   declarations: [
@@ -10,7 +10,7 @@ import { Ng6SimplePagination } from "./ng6-simple-pagination/ng6-simple-paginati
   ],
   imports: [
     BrowserModule,
-    Ng6SimplePagination
+    Ng6SimplePaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

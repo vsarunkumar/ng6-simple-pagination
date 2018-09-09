@@ -46,8 +46,8 @@ pageNumber: number = 0
 
 settings = {
 	totalPage: 5,
-  totalLen: 250,
-  itemsPerPage: 5,
+  totalLen: 230,
+  itemsPerPage: 50,
   color: 'red'
 }
 ```
