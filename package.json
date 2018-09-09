@@ -1,6 +1,6 @@
 {
   "name": "ng6-simple-pagination",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -44,5 +44,14 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/vsarunkumar/ng6-simple-pagination.git"
+  },
+  "keywords": [
+    "Angular 6",
+    "pagination",
+    "ng6-simple-pagination"
+  ],
+  "author": {
+    "name": "Arunkumar V S",
+    "email": "vsarunkumar27@gmail.com"
   }
 }
