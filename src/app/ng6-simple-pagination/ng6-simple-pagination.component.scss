@@ -1,0 +1,28 @@
+.ng6-simple-pagination {
+	display: block;
+  height: 20px;
+  width: 100%;
+  position: relative;
+  margin-top: 25px;
+
+  .left-arrow {
+		position: absolute;
+		right: 38px;
+	  bottom: 3px;
+	  cursor: pointer;
+	}
+
+	.right-arrow {
+		position: absolute;
+		right: 11px;
+	  bottom: 3px;
+	  cursor: pointer;
+	}
+
+	.page-details {
+		position: absolute;
+		right: 72px;
+		font-size: 15px;
+	  bottom: 10px;
+	}
+}
