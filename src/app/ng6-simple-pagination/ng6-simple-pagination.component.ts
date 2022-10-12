@@ -10,8 +10,8 @@ export class Ng6SimplePaginationComponent {
 
 	@Input() settings: any;
 	@Input() pageNumber = 0;
-	totalPage = 0;
-	totalLen = 0;
+	totalPage:number = 0;
+	totalLen:number = 0;
 	itemsPerPage = 0;
 	first: number = 0;
 	last: number = this.itemsPerPage;
